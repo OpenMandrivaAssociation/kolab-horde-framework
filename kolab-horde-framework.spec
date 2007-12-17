@@ -20,7 +20,6 @@ Requires:	php-pear-XML_SVG
 BuildRequires:	php-cli
 BuildRequires:	php-pear
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Horde framework components tailored for Kolab.
