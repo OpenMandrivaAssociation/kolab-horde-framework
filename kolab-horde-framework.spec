@@ -1,10 +1,11 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
+%define _requires_exceptions 	php-pear-Services_Weather(/usr/share/pear/Services/Weather.php)
 
 Summary:	Horde framework components tailored for Kolab
 Name:		kolab-horde-framework
 Version:	2.1.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	GPL
 Group:		System/Servers
 URL:		http://www.kolab.org/
