@@ -4,7 +4,7 @@
 Summary:	Horde framework components tailored for Kolab
 Name:		kolab-horde-framework
 Version:	2.1.0
-Release:	%mkrel 7
+Release:	%mkrel 8
 License:	GPL
 Group:		System/Servers
 URL:		http://www.kolab.org/
@@ -21,6 +21,7 @@ BuildRequires:	php-cli
 BuildRequires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
+AutoReqProv: 0
 
 %description
 Horde framework components tailored for Kolab.
