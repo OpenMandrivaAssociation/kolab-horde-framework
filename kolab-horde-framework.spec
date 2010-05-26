@@ -4,11 +4,12 @@
 Summary:	Horde framework components tailored for Kolab
 Name:		kolab-horde-framework
 Version:	2.1.0
-Release:	%mkrel 9
+Release:	%mkrel 10
 License:	GPL
 Group:		System/Servers
 URL:		http://www.kolab.org/
 Source0:	kolab-horde-framework-%{version}.tar.bz2
+Patch0:		kolab-horde-framework-CVE-2009-4824.diff
 Requires:	php-pear-File_PDF
 Requires:	php-pear-Net_Cyrus
 Requires:	php-pear-Net_IMAP
@@ -29,6 +30,7 @@ Horde framework components tailored for Kolab.
 %prep
 
 %setup -q -n %{name}
+%patch0 -p0
 
 perl -pi -e "s|\@l_prefix\@|%{_prefix}|g" install-packages.php
 
