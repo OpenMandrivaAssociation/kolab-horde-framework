@@ -4,7 +4,7 @@
 Summary:	Horde framework components tailored for Kolab
 Name:		kolab-horde-framework
 Version:	2.1.0
-Release:	%mkrel 12
+Release:	%mkrel 14
 License:	GPL
 Group:		System/Servers
 URL:		http://www.kolab.org/
@@ -75,3 +75,62 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_datadir}/kolab/horde
+
+
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-12mdv2011.0
++ Revision: 666034
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-11mdv2011.0
++ Revision: 606267
+- rebuild
+
+* Wed May 26 2010 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-10mdv2010.1
++ Revision: 546114
+- P0: security fix for CVE-2009-4824
+
+* Sun Feb 21 2010 Luis Daniel Lucio Quiroz <dlucio@mandriva.org> 2.1.0-9mdv2010.1
++ Revision: 509255
+- Bump release
+
+* Sat Feb 20 2010 Luis Daniel Lucio Quiroz <dlucio@mandriva.org> 2.1.0-8mdv2010.1
++ Revision: 508718
+- No php auto-deps detect
+
+* Sat Feb 20 2010 Thomas Spuhler <tspuhler@mandriva.org> 2.1.0-7mdv2010.1
++ Revision: 508629
+- %define _requires_exceptions 	php-pear-Services_Weather(/usr/share/pear/Services/Weather.php)
+
+* Sun Jan 17 2010 Thomas Spuhler <tspuhler@mandriva.org> 2.1.0-6mdv2010.1
++ Revision: 492541
+- added %%define _requires_exceptions   php-pear-Services_Weather(/usr/share/pear/Services/Weather.php) because its missing in the Service-Weather package
+
+* Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 2.1.0-5mdv2010.0
++ Revision: 425490
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 2.1.0-4mdv2009.0
++ Revision: 221878
+- rebuild
+
+* Sun Jan 13 2008 Thierry Vignaud <tv@mandriva.org> 2.1.0-3mdv2008.1
++ Revision: 150430
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Fri Jun 01 2007 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-2mdv2008.0
++ Revision: 33631
+- new mandriva file
+
+* Sat May 26 2007 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-1mdv2008.0
++ Revision: 31473
+- Import kolab-horde-framework
+
+
+
+* Sat May 26 2007 Oden Eriksson <oeriksson@mandriva.com> 2.1.0-1mdv2007.1
+- initial mandriva package
