@@ -7,7 +7,7 @@ Version:	2.1.0
 Release:	15
 License:	GPL
 Group:		System/Servers
-URL:		http://www.kolab.org/
+URL:		https://www.kolab.org/
 Source0:	kolab-horde-framework-%{version}.tar.bz2
 Patch0:		kolab-horde-framework-CVE-2009-4824.diff
 Requires:	php-pear-File_PDF
